@@ -1,0 +1,186 @@
+.navbar-css {
+    margin-top: -50px;
+}
+
+.main-nav {
+    width: 100%;
+    height: 10rem;
+    display: grid;
+    grid-template-columns: 10rem 1fr 2fr 1fr 10rem;
+}
+
+.logo {
+    display: grid;
+    grid-column: 2/3;
+    justify-content: start;
+    align-items: center;
+}
+
+.menu-link {
+    grid-column: 3/4;
+    width: 100%;
+    display: flex;
+    height: 10rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.links ul {
+    height: 10rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+.links ul li a {
+    color: black;
+}
+
+.hamburger-menu-navbar {
+    display: none;
+}
+
+@media (max-width:819px) {
+    .links ul li a {
+        display: none;
+    }
+    .links {
+        grid-row: 1/2;
+        grid-column: 4/5;
+        justify-items: end;
+        align-items: center;
+        transition: all 2s linear;
+    }
+    .menu-link {
+        display: none;
+    }
+    .links .hamburger-menu-navbar {
+        display: block;
+        font-size: 2.5rem;
+        text-align: right;
+        color: black;
+        margin-top: -130px;
+    }
+    .links-mobile-navbar {
+        grid-column: 2/4;
+        position: relative;
+        z-index: 99;
+    }
+    .links-mobile-navbar {
+        background-color: #fff;
+        height: 10rem;
+        display: grid;
+        grid-column: 2/5;
+        align-items: center;
+        padding-left: 3rem;
+        transition: all 2s linear;
+        transform-origin: top;
+    }
+}
+
+
+/* header  */
+
+.header-css {
+    margin-top: -50px;
+    background-color: #000;
+}
+
+.hamburger-menu-header {
+    display: none;
+}
+
+@media (max-width:1135px) {
+    .header-links {
+        width: 100%;
+    }
+    .header-links .links-desktop {
+        display: none;
+    }
+    .header-links .hamburger-menu-header {
+        display: block;
+        font-size: 2.5rem;
+        /* text-align: right; */
+        color: black;
+        margin-top: 20px;
+    }
+    .links-mobile-header {
+        grid-column: 2/4;
+        position: relative;
+        z-index: 99;
+    }
+    .links-mobile-header {
+        background-color: #000;
+        height: 10rem;
+        display: grid;
+        grid-column: 2/5;
+        align-items: center;
+        padding-left: 3rem;
+        transition: all 2s linear;
+        transform-origin: top;
+    }
+}
+
+.main-header {
+    width: 100%;
+    height: 7rem;
+    display: grid;
+    /* grid-template-columns: 5rem 1fr 2fr 8rem; */
+}
+
+.main-header .logo button {
+    color: red;
+    border: 1px solid red;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.header-links {
+    grid-column: 3/4;
+}
+
+.header-links ul {
+    height: 8rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+.header-links ul li a {
+    color: white;
+    text-decoration: none;
+    padding-right: 40px;
+}
+
+
+/* hero  */
+
+.hero {
+    text-align: center;
+    background-image: url(../src/images/skiing.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 73vh;
+}
+
+.hero .text .sale {
+    font-size: 100px;
+    font-weight: bolder;
+    letter-spacing: 10px;
+    color: rgb(255, 77, 0);
+}
+
+.hero .text .discount {
+    background-color: rgb(207, 207, 207);
+    width: 50%;
+    margin-left: 25%;
+    font-weight: bold;
+}
+
+.hero .text .percent {
+    font-weight: bolder;
+    font-size: 90px;
+}
